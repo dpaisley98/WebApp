@@ -1,0 +1,24 @@
+[Instructions]
+	First ensure that you have a database called CA4, 
+	if you do it will create the collection for you if you haven't made it already. 
+    To run the server you run the command npm start, 
+	this will call the index.js file which will start a server on the port 8080.
+	Go to the address localhost:8080 this will show the home interface.
+	The search at the top will handle any keywords you use and query the database, thanks to regex you don't have to bexact with your wording.
+	Click on the categories check boxes and it will search in those fields, by default it will check only title.
+	Once the results are back they will be displayed in a table, 
+	afterwards you can click on an item and it will display a new page which will show more info.
+	You can click on the edit button here to gain access to the fields changing their values, 
+	once you're happy with the changes you can click confirm and the changes will be made.
+	You can also click delete to remove the item from the database.
+	On the home page again you can also click on the create product page to create a new item, 
+	for the images separate each image url with a "," as this is what is used to differentiae different images.
+	
+
+[Requirement List]
+    List of parts completed...
+    1. Completed
+    2. Completed
+    3. Completed
+    4. Completed
+    5. Completed

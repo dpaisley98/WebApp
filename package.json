@@ -1,0 +1,20 @@
+{
+  "name": "ca_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "flatted": "^3.2.7",
+    "js-cookie": "^3.0.5",
+    "mongoose": "^7.0.5"
+  }
+}

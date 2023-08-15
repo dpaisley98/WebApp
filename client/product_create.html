@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Create A Product</title>
+        <link href="css/products.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.6/jscolor.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/colour-palette.ico">
+        <script src="script/productCrudScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="website-header" class="container">
+                <h1>Products</h1>
+            </div>
+            <div id="product-details">
+                <div id="new-product-info" class="details-column">
+                    <form>
+                        <div>
+                            <label for="new-product-title">Title:</label>
+                            <input type="text" id="new-product-title" />
+                        </div>
+                        <div>
+                            <label for="new-product-description">Description:</label>
+                            <textarea id="new-product-description"></textarea>
+                        </div>
+                        <div>
+                            <label for="new-product-price">Price:</label>
+                            <input type="text" id="new-product-price" />
+                        </div>
+                        <div>
+                            <label for="new-product-discount">Discount:</label>
+                            <input type="text" id="new-product-discount" />
+                        </div>
+                        <div>
+                            <label for="new-product-rating">Rating:</label>
+                            <input type="text" id="new-product-rating" />
+                        </div>
+                        <div>
+                            <label for="new-product-stock">Stock:</label>
+                            <input type="text" id="new-product-stock" />
+                        </div>
+                        <div>
+                            <label for="new-product-brand">Brand:</label>
+                            <input type="text" id="new-product-brand" />
+                        </div>
+                        <div>
+                            <label for="new-product-category">Category:</label>
+                            <input type="text" id="new-product-category" />
+                        </div>
+                        <div>
+                            <label for="new-product-thumbnail">Thumbnail URL:</label>
+                            <input type="text" id="new-product-thumbnail" />
+                        </div>
+                        <div>
+                            <label for="new-product-images">Image URLS:</label>
+                            <textarea id="new-product-images"></textarea>
+                        </div>
+                        <div class="edit-buttons">
+                            <button type="button" id="confirm-create">Confirm</button>
+                            <input type="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

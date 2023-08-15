@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Products</title>
+        <link href="css/products.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.6/jscolor.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/colour-palette.ico">
+        <script src="script/productScript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="website-header" class="container">
+                <h1>Products</h1>
+            </div>
+
+            <div id="search-products">
+                <form id="search-criteria">
+                    <label for="search-input">Search:</label>
+                    <input type="text" id="search-input">
+                    <button type="submit" id="get-colour">Search</button>
+                    <br><br>
+                    <div id="product-prices">
+                        <label for="min-price-input">Min Price:</label>
+                        <input type="number" id="min-price-input" min="0">
+                        <label for="max-price-input">Max Price:</label>
+                        <input type="number" id="max-price-input" min="0">
+                    </div>
+                    <div id="product-categories">
+                        <label class="categories">Title
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="categories">Brand
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="categories">Description
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="categories">Category
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div id="nav-buttons">
+                <button type="button" id="previous-page"><--</button>
+                <button type="button" id="next-page">--></button>
+                <button type="button" id="create-product">Create Product</button>
+            </div>
+
+            <p id="table-status" >Table not loaded</p>
+        </div>
+        <div id="div-table">
+            <div id="spinner" class="spinner">
+                <div class="spinner-icon"></div>
+                <div class="spinner-text">Loading...</div>
+            </div>
+            <table id="products-table">
+                <thead>
+                    <tr id="table-header">
+                        <td></td>
+                        <td>Title</td>
+                        <td>Brand</td>
+                        <td>Category</td>
+                        <td>Price</td>
+                        <td>Discount %</td>
+                        <td>Rating</td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </body>
+</html>

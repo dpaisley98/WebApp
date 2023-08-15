@@ -1,0 +1,408 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#technology-descriptions {
+    width: 50%;
+    text-align: center;
+}
+
+.change-colour {
+    background-color: #808080;
+    color: #FFF;
+    padding: 5%;
+    border-radius: 20px;
+}
+
+input, textarea {
+    background-color: #808080;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+
+#color-id {
+    float: left;
+}
+
+#div-table {
+    padding: 2% 20% 20%;
+    border: 1px solid #DDD;
+}
+
+#products-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#products-table td, #products-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#products-table thead {
+    background-color: #808080;
+    color: #FFF;
+}
+
+#products-table tr:nth-child(even) {background-color: #808080;}
+
+#products-table tbody tr:hover {
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+#products-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #808080;
+    color: white;
+}
+
+#products-table img {
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+}
+
+button#get-colour {
+    background-color: #808080;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    margin: 0 auto 0 5vw;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button#get-colour:hover {
+    background-color: #ddd;
+    color: black;
+}
+#search-products {
+    margin-bottom: 20px;
+}
+
+#reset-edit {
+    cursor: pointer;
+}
+
+#search-products label {
+    display: inline-block;
+    width: 70px;
+
+}
+
+#search-products input[type="number"] {
+    width: 80px;
+}
+
+#product-categories {
+    margin-top: 5vh;
+    align-items: end;
+    padding-left: 25%;
+    display: block;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 50%;
+    object-fit: inherit;
+}
+#slide-show-div {
+    position: relative;
+}
+
+#prev-image,
+#next-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    color: #808080;
+    cursor: pointer;
+}
+
+#prev-image {
+    left: 0;
+}
+
+#next-image {
+    right: 0;
+}
+
+
+/* The container */
+.categories {
+    align-self: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.categories input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.categories:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.categories input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.categories input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.categories .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hidden-color-id {
+    display: none;
+}
+
+#product-details {
+    min-height: 50%;
+}
+
+#product-details div {
+    margin-bottom: 10px;
+}
+
+#product-details label {
+    display: inline-block;
+    width: 70px;
+}
+
+#product-details input[type="text"] {
+    width: 70%;
+}
+
+.details-column {
+    float: left;
+    width: 45%;
+}
+
+#product-info, #editable-product-info {
+    margin-right: 5vw;
+}
+
+#product-info label, #editable-product-info label {
+    margin-right: 1vw;
+}
+
+#editable-product-info, #color-options {
+    display: none;
+}
+
+#color-box {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    border: 1px solid #ccc;
+    display: inline-flex;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+#nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#nav-buttons button, #effect-buttons button, .edit-buttons button {
+    background-color: #808080;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition-duration: 0.4s;
+}
+
+#nav-buttons button:not(:last-child), #effect-buttons button:not(:last-child) {
+    margin-right: 10px;
+}
+
+#nav-buttons button:hover, #effect-buttons button:hover {
+    background-color: #808080;
+}
+
+#effect-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.edit-buttons button {
+    margin-top: 5px;
+}
+
+.spinner {
+    position: fixed;
+    z-index: 9999;
+    display:none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+}
+
+.spinner-icon {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #808888;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s infinite linear;
+}
+
+.spinner-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p, label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    /* styles for screens smaller than 768px */
+    #div-table {
+        padding: 1vh;
+    }
+
+    #products-table td, #products-table th {
+        padding: 6px;
+    }
+
+    #products-table img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #products-table {
+        font-size: 0.8em;
+    }
+    #products-table td, #products-table th {
+        padding: 4px;
+    }
+    #products-table th {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    #products-table img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* styles for screens smaller than 480px */
+    #div-table {
+        padding: 0.5vh;
+    }
+
+    #products-table td, #products-table th {
+        padding: 4px;
+    }
+
+    #products-table img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #products-table {
+        font-size: 0.6em;
+    }
+    #products-table td, #products-table th {
+        padding: 2px;
+    }
+    #products-table th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    #products-table img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
