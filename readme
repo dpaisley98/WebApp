@@ -1,24 +1,54 @@
-[Instructions]
-	First ensure that you have a database called CA4, 
-	if you do it will create the collection for you if you haven't made it already. 
-    To run the server you run the command npm start, 
-	this will call the index.js file which will start a server on the port 8080.
-	Go to the address localhost:8080 this will show the home interface.
-	The search at the top will handle any keywords you use and query the database, thanks to regex you don't have to bexact with your wording.
-	Click on the categories check boxes and it will search in those fields, by default it will check only title.
-	Once the results are back they will be displayed in a table, 
-	afterwards you can click on an item and it will display a new page which will show more info.
-	You can click on the edit button here to gain access to the fields changing their values, 
-	once you're happy with the changes you can click confirm and the changes will be made.
-	You can also click delete to remove the item from the database.
-	On the home page again you can also click on the create product page to create a new item, 
-	for the images separate each image url with a "," as this is what is used to differentiae different images.
-	
+# JavaScript Web App: Store Simulation
 
-[Requirement List]
-    List of parts completed...
-    1. Completed
-    2. Completed
-    3. Completed
-    4. Completed
-    5. Completed
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Instructions](#instructions)
+
+
+## Introduction
+This repository contains a JavaScript web application that simulates an online store. The app is built using Node.js for the server-side implementation, MongoDB as the database, and incorporates RESTful APIs for communication between the client and server. The front end of the application utilizes AJAX for dynamic content loading.
+
+## Features
+
+- Browse and search through a MongoDB database containing various items available for purchase.
+- Interactive and user-friendly front end with dynamic content loading using AJAX.
+- Server-side implementation using Node.js to handle requests and serve data.
+- RESTful API architecture for seamless communication between the client and server.
+- Smooth user experience with real-time updates and minimal page reloads.
+
+## Getting Started
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js: Make sure you have Node.js installed on your system. You can download it from [nodejs.org](https://nodejs.org/).
+- MongoDB: Install and set up MongoDB on your machine. Visit [mongodb.com](https://www.mongodb.com/) for installation instructions.
+
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/dpaisley98/WebApp.git
+
+
+## Instructions
+
+- First, ensure that you have a database called CA4. If you do, it will create the collection for you if you haven't already.
+- To run the server, use the command `npm start`. This will call the `index.js` file and start a server on port 8080.
+- Access the server by going to `localhost:8080`. This will display the home interface.
+- The search at the top handles keywords and queries the database using regex, allowing flexibility in wording.
+- Check the category checkboxes to narrow the search scope; by default, only the title is checked.
+- After receiving results, they will be presented in a table format.
+- Click on an item to view more details on a new page.
+- On the item details page, click the "Edit" button to modify field values. Once satisfied, confirm the changes.
+- Use the "Delete" button to remove an item from the database.
+- From the home page, navigate to the "Create Product" page to add a new item.
+- When adding images, separate each image URL with a "," as it distinguishes different images.
+
+
